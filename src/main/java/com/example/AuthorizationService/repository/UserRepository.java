@@ -1,6 +1,6 @@
-package com.example.AuthorizationService.Repository;
+package com.example.AuthorizationService.repository;
 
-import com.example.AuthorizationService.Enums.Authorities;
+import com.example.AuthorizationService.enums.Authorities;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
@@ -10,10 +10,10 @@ import java.util.List;
 public class UserRepository {
 
     private final List<Authorities> authorities = new ArrayList<>(Collections.singleton(Authorities.READ));
-    public List<Authorities> getUserAuthorities(String user, String password) {
 
-        String user1 = "Ivan";
+    public List<Authorities> getUserAuthorities(String user, String password) {
         String password1 = "1111";
+        String user1 = "Ivan";
         if (user1.equals(user) & password1.equals(password)){
             return authorities;
         }

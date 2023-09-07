@@ -1,4 +1,4 @@
-package com.example.AuthorizationService.Exception;
+package com.example.AuthorizationService.exception;
 
 public class InvalidCredentials extends RuntimeException {
     public InvalidCredentials(String msg) {
